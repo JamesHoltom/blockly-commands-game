@@ -1,8 +1,5 @@
 export default {
   "level1": {
-    "title": "Level 1",
-    "description": "",
-    "activeRoom": "room_1",
     "actors": [
       {
         "type": "character",
