@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Task Manager Game</title>
+    <link rel="stylesheet" href="bootstrap.min.css" />
+  </head>
+  <body>
+    <div id="header" class="container-fluid">
+      <h1>Task Manager Game</h1>
+    </div>
+    <div id="game_container" class="container-fluid">
+      <div class="row">
+        <div id="blocks_workspace" class="col"></div>
+        <div id="game_window" class="col-auto"></div>
+      </div>
+    </div>
+    <div id="menu" class="container-fluid">
+      <button id="start_test">Start</button>
+      <button id="cancel_test" disabled>Cancel</button>
+      <button id="show_prompt" data-bs-toggle="modal" data-bs-target="#modal_pane">Show Prompt</button>
+      <button id="show_code">Show Code</button>
+    </div>
+    <div id="modal_pane" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div id="prompt_content" class="modal-content hidden">
+          <div class="modal-header">
+            <h5>Task Manager Game</h5>
+          </div>
+          <div class="modal-body">
+            <p>Using the toolbox on the left, connect blocks together to form a set of instructions.</p>
+            <p>On the right, the character will attempt to follow each instruction.</p>
+            <p>To win the game, guide the character in completing all of the tasks.</p>
+          </div>
+          <div class="modal-footer">
+            <button class="btn btn-primary" data-bs-dismiss="modal">OK</button>
+          </div>
+        </div>
+        <div id="results_content" class="modal-content hidden">
+          <div class="modal-header">
+            <h5 id="results_title"></h5>
+          </div>
+          <div class="modal-body">
+            <div id="results-message"></div>
+          </div>
+          <div class="modal-footer">
+            <button id="results_confirm" class="btn btn-primary" data-bs-dismiss="modal">Continue</button>
+          </div>
+        </div>
+      </div>
+    </div>
+      <img src="assets/logo_built_on.png" class="position-absolute bottom-0 end-0 m-2" width="200" />
+
+    <script type="application/javascript" src="bootstrap.min.js" defer></script>
+    <script type="application/javascript" src="js-interpreter.min.js" defer></script>
+  </body>
+</html>
