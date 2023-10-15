@@ -1,5 +1,7 @@
 # Task Manager Game
 
+_This is a prototype, stripped down to the core features needed to display the game._
+
 ## Game Rules
 
 The player must guide a character into completing a series of tasks, by creating a set of instructions with blocks from Blockly.
